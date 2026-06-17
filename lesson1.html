@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson 1 - Introduction to Web Design & Development</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eef4ff;
+color:#222;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#0057b8,#0077ff);
+color:white;
+padding:30px;
+text-align:center;
+}
+
+header h1{
+font-size:35px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#0057b8;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-top:20px;
+margin-bottom:10px;
+color:#0b62d6;
+}
+
+ul{
+margin-left:20px;
+}
+
+.example{
+background:#f4f7fa;
+padding:15px;
+border-left:5px solid #0057b8;
+margin-top:15px;
+overflow:auto;
+}
+
+code{
+color:#e91e63;
+font-weight:bold;
+}
+
+textarea{
+width:100%;
+height:200px;
+padding:15px;
+font-size:15px;
+border:1px solid #ccc;
+border-radius:8px;
+resize:none;
+margin-top:10px;
+}
+
+button{
+padding:12px 30px;
+background:#0057b8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-top:15px;
+font-size:16px;
+}
+
+button:hover{
+background:#003f84;
+}
+
+iframe{
+width:100%;
+height:220px;
+border:1px solid #ddd;
+margin-top:15px;
+background:white;
+}
+
+.quiz{
+padding:10px;
+margin-top:10px;
+background:#f8f8f8;
+border-radius:8px;
+}
+
+footer{
+background:#0057b8;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:26px;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>WEB DESIGN & DEVELOPMENT</h1>
+
+<p>Lesson 1 - Introduction to Web Design and Development</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Lesson Objectives</h2>
+
+<p>At the end of this lesson students should be able to:</p>
+
+<ul>
+
+<li>Define Web Design.</li>
+
+<li>Define Web Development.</li>
+
+<li>Understand websites and webpages.</li>
+
+<li>Know types of websites.</li>
+
+<li>Know tools used for web development.</li>
+
+<li>Create their first webpage.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>What is Web Design?</h2>
+
+<p>
+
+Web Design is the process of planning and creating the visual appearance of a website.
+
+It includes colors, fonts, layouts, images and user experience.
+
+</p>
+
+<h3>Examples</h3>
+
+<ul>
+
+<li>School Website</li>
+
+<li>Company Website</li>
+
+<li>Bank Website</li>
+
+<li>Hospital Website</li>
+
+<li>E-commerce Website</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>What is Web Development?</h2>
+
+<p>
+
+Web Development is the process of building websites using programming languages.
+
+Developers use HTML, CSS and JavaScript to create webpages.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Difference Between Web Design and Web Development</h2>
+
+<table width="100%" border="1" cellpadding="10">
+
+<tr>
+
+<th>Web Design</th>
+
+<th>Web Development</th>
+
+</tr>
+
+<tr>
+
+<td>Deals with appearance</td>
+
+<td>Deals with functionality</td>
+
+</tr>
+
+<tr>
+
+<td>Uses layouts and colors</td>
+
+<td>Uses programming</td>
+
+</tr>
+
+<tr>
+
+<td>UI/UX</td>
+
+<td>Logic and coding</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Languages Used in Web Development</h2>
+
+<ul>
+
+<li><b>HTML</b> - Structure</li>
+
+<li><b>CSS</b> - Styling</li>
+
+<li><b>JavaScript</b> - Interaction</li>
+
+<li>PHP</li>
+
+<li>Python</li>
+
+<li>NodeJS</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>HTML Example</h2>
+
+<div class="example">
+
+&lt;h1&gt;Hello World&lt;/h1&gt;
+
+&lt;p&gt;Welcome to Web Development&lt;/p&gt;
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Try It Yourself</h2>
+
+<textarea id="editor">
+
+<h1>Hello Students</h1>
+
+<p>This is my first webpage.</p>
+
+</textarea>
+
+<button onclick="run()">Run Code</button>
+
+<iframe id="output"></iframe>
+
+</div>
+
+<div class="card">
+
+<h2>Exercise</h2>
+
+<ol>
+
+<li>Define Web Design.</li>
+
+<li>Define Web Development.</li>
+
+<li>Mention five websites.</li>
+
+<li>List three programming languages.</li>
+
+<li>What is HTML?</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Class Activities</h2>
+
+<ul>
+
+<li>Create your first webpage.</li>
+
+<li>Type your name using HTML heading.</li>
+
+<li>Add a paragraph introducing yourself.</li>
+
+<li>Add your favorite color using CSS.</li>
+
+<li>Show your work to your teacher.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Assignment</h2>
+
+<p>
+
+Create a webpage introducing yourself with your name, school, hobbies and favorite subject using HTML.
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+ICT Training Academy | Web Design & Development | Lesson 1
+
+</footer>
+
+<script>
+
+function run(){
+
+var code=document.getElementById("editor").value;
+
+document.getElementById("output").srcdoc=code;
+
+}
+
+run();
+
+</script>
+
+</body>
+</html>

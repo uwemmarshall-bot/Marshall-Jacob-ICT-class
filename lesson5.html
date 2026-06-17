@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lesson 5 - HTML Forms and Input Elements</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#eef5ff;
+line-height:1.9;
+color:#222;
+}
+
+header{
+background:linear-gradient(135deg,#004aad,#0d8bff);
+color:white;
+text-align:center;
+padding:35px;
+}
+
+header h1{
+font-size:35px;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#0057b8;
+margin-bottom:15px;
+}
+
+.card h3{
+color:#0d6efd;
+margin-top:15px;
+}
+
+pre{
+background:#111;
+color:#00ff88;
+padding:15px;
+border-radius:8px;
+overflow:auto;
+margin-top:15px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table th,table td{
+border:1px solid #ccc;
+padding:10px;
+}
+
+table th{
+background:#0057b8;
+color:white;
+}
+
+textarea{
+width:100%;
+height:350px;
+padding:15px;
+font-size:15px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-top:15px;
+}
+
+button{
+padding:12px 30px;
+background:#0057b8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+margin-top:15px;
+}
+
+button:hover{
+background:#003c8a;
+}
+
+iframe{
+width:100%;
+height:320px;
+border:1px solid #ddd;
+margin-top:20px;
+background:white;
+}
+
+footer{
+background:#0057b8;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:26px;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>WEB DESIGN & DEVELOPMENT</h1>
+
+<h3>Lesson 5 - HTML Forms and Input Elements</h3>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Lesson Objectives</h2>
+
+<ul>
+
+<li>Understand HTML Forms.</li>
+
+<li>Understand Input Elements.</li>
+
+<li>Create Textboxes and Password Fields.</li>
+
+<li>Create Radio Buttons and Checkboxes.</li>
+
+<li>Create Drop-down Lists.</li>
+
+<li>Create a Complete Registration Form.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>What is an HTML Form?</h2>
+
+<p>
+
+An HTML Form is used to collect information from users.
+
+Forms are commonly used on websites for registration, login, contact pages, surveys, online applications, and online shopping.
+
+Information entered into a form can later be processed and stored in a database.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>The &lt;form&gt; Tag</h2>
+
+<p>
+
+Every HTML form begins with the <b>&lt;form&gt;</b> tag and ends with the <b>&lt;/form&gt;</b> tag.
+
+All input elements must be placed inside the form.
+
+</p>
+
+<pre>
+
+&lt;form&gt;
+
+Form Elements Here
+
+&lt;/form&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Common Form Elements</h2>
+
+<table>
+
+<tr>
+
+<th>Element</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>input type="text"</td>
+
+<td>Text Field</td>
+
+</tr>
+
+<tr>
+
+<td>input type="password"</td>
+
+<td>Password Box</td>
+
+</tr>
+
+<tr>
+
+<td>input type="email"</td>
+
+<td>Email Address</td>
+
+</tr>
+
+<tr>
+
+<td>input type="radio"</td>
+
+<td>Select One Option</td>
+
+</tr>
+
+<tr>
+
+<td>input type="checkbox"</td>
+
+<td>Select Multiple Options</td>
+
+</tr>
+
+<tr>
+
+<td>select</td>
+
+<td>Drop-down List</td>
+
+</tr>
+
+<tr>
+
+<td>textarea</td>
+
+<td>Large Text Area</td>
+
+</tr>
+
+<tr>
+
+<td>button</td>
+
+<td>Submit Button</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Simple Registration Form</h2>
+
+<pre>
+
+&lt;form&gt;
+
+Name:
+
+&lt;input type="text"&gt;
+
+Password:
+
+&lt;input type="password"&gt;
+
+&lt;button&gt;
+
+Submit
+
+&lt;/button&gt;
+
+&lt;/form&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Explanation</h2>
+
+<ul>
+
+<li><b>Text Box</b> allows users to type text.</li>
+
+<li><b>Password Box</b> hides typed characters.</li>
+
+<li><b>Radio Button</b> allows one selection.</li>
+
+<li><b>Checkbox</b> allows multiple selections.</li>
+
+<li><b>Select</b> creates a drop-down menu.</li>
+
+<li><b>Textarea</b> allows long messages.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Try It Yourself</h2>
+
+<textarea id="editor">
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+Name:<br>
+
+<input type="text"><br><br>
+
+Email:<br>
+
+<input type="email"><br><br>
+
+Password:<br>
+
+<input type="password"><br><br>
+
+Gender:<br>
+
+<input type="radio" name="g"> Male
+
+<input type="radio" name="g"> Female
+
+<br><br>
+
+Skills:<br>
+
+<input type="checkbox"> HTML
+
+<input type="checkbox"> CSS
+
+<input type="checkbox"> JavaScript
+
+<br><br>
+
+State:<br>
+
+<select>
+
+<option>Enugu</option>
+
+<option>Lagos</option>
+
+<option>Abuja</option>
+
+</select>
+
+<br><br>
+
+Message:<br>
+
+<textarea></textarea>
+
+<br><br>
+
+<button>
+
+Register
+
+</button>
+
+</form>
+
+</body>
+
+</html>
+
+</textarea>
+
+<button onclick="runCode()">
+
+Run Code
+
+</button>
+
+<iframe id="result"></iframe>
+
+</div>
+
+<div class="card">
+
+<h2>Worked Example</h2>
+
+<p>
+
+Question:
+
+Create a login page with Username, Password and Login Button.
+
+</p>
+
+<pre>
+
+&lt;form&gt;
+
+Username:
+
+&lt;input type="text"&gt;
+
+Password:
+
+&lt;input type="password"&gt;
+
+&lt;button&gt;
+
+Login
+
+&lt;/button&gt;
+
+&lt;/form&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Exercises</h2>
+
+<ol>
+
+<li>Define an HTML Form.</li>
+
+<li>What is the purpose of a Text Box?</li>
+
+<li>What is the difference between Radio Button and Checkbox?</li>
+
+<li>Create a Login Form.</li>
+
+<li>Create a Contact Form.</li>
+
+<li>Create a Student Registration Form.</li>
+
+<li>Create a Drop-down List containing five countries.</li>
+
+<li>Create a Feedback Form.</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Class Activities</h2>
+
+<ul>
+
+<li>Create your own Registration Form.</li>
+
+<li>Add Name, Email and Password fields.</li>
+
+<li>Add Gender Radio Buttons.</li>
+
+<li>Add Skills Checkboxes.</li>
+
+<li>Add a Country Drop-down List.</li>
+
+<li>Add a Comment Box.</li>
+
+<li>Add Submit and Reset Buttons.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Assignment</h2>
+
+<p>
+
+Design a complete Online School Admission Form containing:
+
+</p>
+
+<ul>
+
+<li>Student Name</li>
+
+<li>Date of Birth</li>
+
+<li>Email Address</li>
+
+<li>Phone Number</li>
+
+<li>Gender</li>
+
+<li>State of Origin</li>
+
+<li>Course Selection</li>
+
+<li>Passport Upload (File Input)</li>
+
+<li>Parent's Name</li>
+
+<li>Address</li>
+
+<li>Submit Button</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+ICT Training Academy | Web Design & Development | Lesson 5
+
+</footer>
+
+<script>
+
+function runCode(){
+
+document.getElementById("result").srcdoc=document.getElementById("editor").value;
+
+}
+
+runCode();
+
+</script>
+
+</body>
+</html>

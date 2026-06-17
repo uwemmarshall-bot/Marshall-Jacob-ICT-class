@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lesson 4 - HTML Tables, Images and Hyperlinks</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#eef5ff;
+color:#222;
+line-height:1.9;
+}
+
+header{
+background:linear-gradient(135deg,#004aad,#0d8bff);
+padding:35px;
+text-align:center;
+color:white;
+}
+
+header h1{
+font-size:35px;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#0057b8;
+margin-bottom:15px;
+}
+
+.card h3{
+color:#0d6efd;
+margin-top:15px;
+}
+
+pre{
+background:#111;
+color:#00ff88;
+padding:15px;
+border-radius:8px;
+overflow:auto;
+margin-top:15px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table th,table td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+table th{
+background:#0057b8;
+color:white;
+}
+
+textarea{
+width:100%;
+height:300px;
+padding:15px;
+font-size:15px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-top:15px;
+}
+
+button{
+padding:12px 30px;
+background:#0057b8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-top:15px;
+font-size:16px;
+}
+
+button:hover{
+background:#003f84;
+}
+
+iframe{
+width:100%;
+height:260px;
+border:1px solid #ddd;
+margin-top:20px;
+background:white;
+}
+
+footer{
+background:#0057b8;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:26px;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>WEB DESIGN & DEVELOPMENT</h1>
+
+<h3>Lesson 4 - HTML Tables, Images and Hyperlinks</h3>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Lesson Objectives</h2>
+
+<ul>
+
+<li>Understand HTML Tables.</li>
+
+<li>Create rows and columns.</li>
+
+<li>Insert images into webpages.</li>
+
+<li>Create hyperlinks.</li>
+
+<li>Build a simple information page.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>What is an HTML Table?</h2>
+
+<p>
+
+An HTML table is used to arrange information into rows and columns.
+
+Tables are useful for displaying timetables, student records, examination results, financial reports and many other forms of organized information.
+
+</p>
+
+<h3>Main Table Tags</h3>
+
+<table>
+
+<tr>
+
+<th>Tag</th>
+
+<th>Meaning</th>
+
+</tr>
+
+<tr>
+
+<td>&lt;table&gt;</td>
+
+<td>Creates a table</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;tr&gt;</td>
+
+<td>Creates a row</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;th&gt;</td>
+
+<td>Creates a heading cell</td>
+
+</tr>
+
+<tr>
+
+<td>&lt;td&gt;</td>
+
+<td>Creates a normal data cell</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Example of a Table</h2>
+
+<pre>
+
+&lt;table border="1"&gt;
+
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Adding Images</h2>
+
+<p>
+
+Images make websites attractive and informative.
+
+The HTML image tag is:
+
+</p>
+
+<pre>
+
+&lt;img src="photo.jpg"
+width="300"
+height="200"
+alt="Photo"&gt;
+
+</pre>
+
+<p>
+
+<b>src</b> specifies the image location.
+
+<b>width</b> specifies image width.
+
+<b>height</b> specifies image height.
+
+<b>alt</b> displays text if the image cannot load.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Creating Hyperlinks</h2>
+
+<p>
+
+Hyperlinks connect one webpage to another webpage or website.
+
+Users click hyperlinks to navigate through websites.
+
+</p>
+
+<pre>
+
+&lt;a href="https://www.google.com"&gt;
+
+Visit Google
+
+&lt;/a&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Complete Example</h2>
+
+<pre>
+
+&lt;h1&gt;Student Profile&lt;/h1&gt;
+
+&lt;img src="https://via.placeholder.com/150"&gt;
+
+&lt;table border="1"&gt;
+
+&lt;tr&gt;
+
+&lt;th&gt;Subject&lt;/th&gt;
+
+&lt;th&gt;Score&lt;/th&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;Mathematics&lt;/td&gt;
+
+&lt;td&gt;85&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/table&gt;
+
+&lt;a href="https://google.com"&gt;
+
+Google
+
+&lt;/a&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Try It Yourself</h2>
+
+<textarea id="editor">
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1>MY SCHOOL</h1>
+
+<img src="https://via.placeholder.com/200">
+
+<table border="1">
+
+<tr>
+
+<th>Subject</th>
+
+<th>Teacher</th>
+
+</tr>
+
+<tr>
+
+<td>Mathematics</td>
+
+<td>Mr James</td>
+
+</tr>
+
+<tr>
+
+<td>English</td>
+
+<td>Mrs Grace</td>
+
+</tr>
+
+</table>
+
+<br><br>
+
+<a href="https://google.com">
+
+Visit Google
+
+</a>
+
+</body>
+
+</html>
+
+</textarea>
+
+<button onclick="runCode()">
+
+Run Code
+
+</button>
+
+<iframe id="result"></iframe>
+
+</div>
+
+<div class="card">
+
+<h2>Worked Example</h2>
+
+<p>
+
+Question:
+
+Create a webpage showing three subjects and their teachers using an HTML table.
+
+</p>
+
+<pre>
+
+<table border="1">
+
+<tr>
+
+<th>Subject</th>
+
+<th>Teacher</th>
+
+</tr>
+
+<tr>
+
+<td>ICT</td>
+
+<td>Mr John</td>
+
+</tr>
+
+<tr>
+
+<td>Physics</td>
+
+<td>Mrs Rose</td>
+
+</tr>
+
+<tr>
+
+<td>Biology</td>
+
+<td>Mr David</td>
+
+</tr>
+
+</table>
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Exercises</h2>
+
+<ol>
+
+<li>What is an HTML table?</li>
+
+<li>What does &lt;tr&gt; represent?</li>
+
+<li>What does &lt;td&gt; represent?</li>
+
+<li>Write HTML code to insert an image.</li>
+
+<li>Create a hyperlink to YouTube.</li>
+
+<li>Create a table with three rows and two columns.</li>
+
+<li>Create a timetable using HTML tables.</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Class Activities</h2>
+
+<ul>
+
+<li>Create your class timetable.</li>
+
+<li>Create a student score sheet.</li>
+
+<li>Insert your school logo.</li>
+
+<li>Create links to Google and YouTube.</li>
+
+<li>Design your personal profile page.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Assignment</h2>
+
+<p>
+
+Create a webpage containing:
+
+</p>
+
+<ul>
+
+<li>Your Name</li>
+
+<li>Your Passport Photograph</li>
+
+<li>A Table showing five subjects and scores</li>
+
+<li>A Link to your favourite website</li>
+
+<li>Your favourite quote</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+ICT Training Academy | Web Design & Development | Lesson 4
+
+</footer>
+
+<script>
+
+function runCode(){
+
+document.getElementById("result").srcdoc=document.getElementById("editor").value;
+
+}
+
+runCode();
+
+</script>
+
+</body>
+</html>

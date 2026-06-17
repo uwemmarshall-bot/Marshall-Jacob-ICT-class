@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lesson 3 - HTML Elements and Attributes</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#edf4ff;
+color:#222;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#004aad,#0d8eff);
+padding:35px;
+text-align:center;
+color:white;
+}
+
+header h1{
+font-size:35px;
+}
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#0057b8;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-top:15px;
+color:#0d6efd;
+}
+
+pre{
+background:#111;
+color:#00ff88;
+padding:15px;
+border-radius:8px;
+overflow:auto;
+margin-top:15px;
+}
+
+textarea{
+width:100%;
+height:280px;
+padding:15px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+margin-top:15px;
+}
+
+button{
+padding:12px 30px;
+background:#0057b8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-top:15px;
+font-size:16px;
+}
+
+iframe{
+width:100%;
+height:250px;
+margin-top:20px;
+border:1px solid #ddd;
+background:white;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table th,table td{
+border:1px solid #ddd;
+padding:10px;
+}
+
+table th{
+background:#0057b8;
+color:white;
+}
+
+footer{
+background:#0057b8;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:27px;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>WEB DESIGN & DEVELOPMENT</h1>
+
+<h3>Lesson 3 - HTML Elements and Attributes</h3>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Lesson Objectives</h2>
+
+<ul>
+
+<li>Understand HTML Elements.</li>
+
+<li>Understand HTML Attributes.</li>
+
+<li>Create Headings and Paragraphs.</li>
+
+<li>Create Links and Images.</li>
+
+<li>Create Lists.</li>
+
+<li>Use Attributes correctly.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>What is an HTML Element?</h2>
+
+<p>
+
+An HTML element is everything from the opening tag to the closing tag.
+
+Elements tell the browser what should appear on the webpage.
+
+An element normally consists of:
+
+</p>
+
+<pre>
+
+Opening Tag + Content + Closing Tag
+
+</pre>
+
+<p>Example:</p>
+
+<pre>
+
+&lt;p&gt;Welcome to ICT Class&lt;/p&gt;
+
+</pre>
+
+<p>
+
+The opening tag is &lt;p&gt; while the closing tag is &lt;/p&gt;.
+
+The content is "Welcome to ICT Class".
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>What is an HTML Attribute?</h2>
+
+<p>
+
+Attributes provide additional information about HTML elements.
+
+Attributes are always written inside the opening tag.
+
+They usually come as:
+
+</p>
+
+<pre>
+
+attribute="value"
+
+</pre>
+
+<p>Example:</p>
+
+<pre>
+
+&lt;img src="logo.png" width="200"&gt;
+
+</pre>
+
+<p>
+
+Here,
+
+<b>src</b> tells the browser where the image is located while
+
+<b>width</b> tells the browser how wide the image should appear.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Common HTML Attributes</h2>
+
+<table>
+
+<tr>
+
+<th>Attribute</th>
+
+<th>Purpose</th>
+
+</tr>
+
+<tr>
+
+<td>src</td>
+
+<td>Specifies image location</td>
+
+</tr>
+
+<tr>
+
+<td>href</td>
+
+<td>Specifies hyperlink destination</td>
+
+</tr>
+
+<tr>
+
+<td>width</td>
+
+<td>Image width</td>
+
+</tr>
+
+<tr>
+
+<td>height</td>
+
+<td>Image height</td>
+
+</tr>
+
+<tr>
+
+<td>title</td>
+
+<td>Tooltip information</td>
+
+</tr>
+
+<tr>
+
+<td>alt</td>
+
+<td>Alternative text for images</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Headings Example</h2>
+
+<pre>
+
+&lt;h1&gt;Heading One&lt;/h1&gt;
+
+&lt;h2&gt;Heading Two&lt;/h2&gt;
+
+&lt;h3&gt;Heading Three&lt;/h3&gt;
+
+&lt;h4&gt;Heading Four&lt;/h4&gt;
+
+&lt;h5&gt;Heading Five&lt;/h5&gt;
+
+&lt;h6&gt;Heading Six&lt;/h6&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Links Example</h2>
+
+<pre>
+
+&lt;a href="https://google.com"&gt;
+
+Visit Google
+
+&lt;/a&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Images Example</h2>
+
+<pre>
+
+&lt;img src="school.jpg"
+width="300"
+height="200"
+alt="School"&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Lists Example</h2>
+
+<pre>
+
+&lt;ul&gt;
+
+&lt;li&gt;HTML&lt;/li&gt;
+
+&lt;li&gt;CSS&lt;/li&gt;
+
+&lt;li&gt;JavaScript&lt;/li&gt;
+
+&lt;/ul&gt;
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Interactive Coding Practice</h2>
+
+<textarea id="editor">
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1>MY PROFILE</h1>
+
+<p>My name is John.</p>
+
+<img src="https://via.placeholder.com/200">
+
+<ul>
+
+<li>Football</li>
+
+<li>Reading</li>
+
+<li>Coding</li>
+
+</ul>
+
+<a href="https://google.com">
+
+Visit Google
+
+</a>
+
+</body>
+
+</html>
+
+</textarea>
+
+<button onclick="runCode()">
+
+Run Code
+
+</button>
+
+<iframe id="output"></iframe>
+
+</div>
+
+<div class="card">
+
+<h2>Worked Example</h2>
+
+<p>
+
+Question:
+
+Create a webpage displaying your name, age and three hobbies.
+
+</p>
+
+<pre>
+
+<h1>Mary Johnson</h1>
+
+<p>Age: 16 Years</p>
+
+<ul>
+
+<li>Singing</li>
+
+<li>Swimming</li>
+
+<li>Reading</li>
+
+</ul>
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>Exercises</h2>
+
+<ol>
+
+<li>Define HTML Element.</li>
+
+<li>Define HTML Attribute.</li>
+
+<li>Give five HTML tags.</li>
+
+<li>Give five HTML attributes.</li>
+
+<li>Create a webpage with your name.</li>
+
+<li>Create a list of five countries.</li>
+
+<li>Create a hyperlink to your favourite website.</li>
+
+<li>Insert an image into a webpage.</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2>Class Activities</h2>
+
+<ul>
+
+<li>Create six headings.</li>
+
+<li>Create three paragraphs.</li>
+
+<li>Create an ordered list.</li>
+
+<li>Create an unordered list.</li>
+
+<li>Insert an image.</li>
+
+<li>Create two hyperlinks.</li>
+
+<li>Add width and height attributes to an image.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Assignment</h2>
+
+<p>
+
+Create a webpage about your family containing:
+
+</p>
+
+<ul>
+
+<li>Main Heading</li>
+
+<li>Paragraph Introduction</li>
+
+<li>Family Picture</li>
+
+<li>Five Family Members</li>
+
+<li>Favourite Family Activity</li>
+
+<li>Link to Google</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+ICT Training Academy | Web Design & Development | Lesson 3
+
+</footer>
+
+<script>
+
+function runCode(){
+
+document.getElementById("output").srcdoc=document.getElementById("editor").value;
+
+}
+
+runCode();
+
+</script>
+
+</body>
+</html>
